@@ -1,0 +1,94 @@
+.footer {
+  width: 100%;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+.footer hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: white;
+  margin-top: 1rem;
+}
+
+.cfooter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.clogo {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.clogo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.clogo span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  max-width: 14rem;
+}
+.fdetail {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  font-size: 0.7rem;
+  gap: 1rem;
+  font-style: italic;
+}
+.fdetail :first-child {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.pngLine {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon {
+  width: 25px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 0.65rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .cfooter {
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1.7rem;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cfooter {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1.7rem;
+  }
+
+  .clogo {
+    display: none;
+  }
+}
